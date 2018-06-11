@@ -1,18 +1,25 @@
   console.log("inside calculator");
+do {
 
-  var x = prompt('Please insert first number for calculation');
-  var y = prompt('Please insert second number for calculation');
-  var z = parseInt(x)+parseInt(y)
-  var addition = alert(z);
+  var value1 = parseFloat(prompt('Please insert first number for calculation:'));
+  var value2 = parseFloat(prompt('Please insert second number for calculation:'));
+  var choice = (prompt('Choose your action (a)dd (s)ubtract (m)ultiply (d)ivide'));
+  if(choice == 'a'){
+    alert(value1 + value2);
+  }else if(choice == 's'){
+    alert(value1 - value2);
+  }else if(choice == 'm'){
+    alert(value1*value2);
+  }else if(choice == 'd'){
+    alert(value1/value2);
+  }else{
+    alert(value1+value2)
+  }
+  var user = prompt('New calculation? (y) or Quit? (n)')
+  if (user == 'y') {
+    alert('New calculation loading')
+  } else {
+    alert('Thanks for using ManiCalc')
+  }
 
-
-
-
-
-
-    // get the user inputs
-    // var value1 = prompt('Please insert first number for calculation:');
-    // var value2 = prompt('Please insert first number for calculation:');
-    // var choice = prompt('Choose your action (a)dd (s)ubtract (m)ultiply (d)ivide') || "a";
-    //
-    // alert("your answer is ");
+} while (user == 'y');
