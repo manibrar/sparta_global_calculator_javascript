@@ -2,8 +2,8 @@
 
   do {
 
-    var ctr_array = (x, y);
     var y = ++x;
+    var ctr_array = [x, y];
     console.log("ManiCalc Prompt Calculator Session " + x);
 
     var value1 = parseFloat(prompt('Please insert first number for calculation:'));
