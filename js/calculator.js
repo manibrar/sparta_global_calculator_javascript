@@ -3,6 +3,7 @@
   do {
 
     var y = ++x;
+    var x = y;
     var ctr_array = [x, y];
     console.log("ManiCalc Prompt Calculator Session " + x);
 
@@ -33,7 +34,7 @@
     } else {
 
     }
-    var x = y;
+
 
 
   } while (user != 'n');
