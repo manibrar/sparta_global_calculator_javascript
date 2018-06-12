@@ -18,7 +18,7 @@
       console.log("The answer is " + (value1 - value2));
     } else if (choice == '*') {
       alert("your answer was " + (value1 * value2));
-      console.log("The answer is " + (value1 - value2));
+      console.log("The answer is " + (value1 * value2));
     } else if (choice == '/') {
       alert("your answer was " + (value1 / value2));
       console.log("The answer is " + (value1 / value2));
