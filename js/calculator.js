@@ -1,12 +1,10 @@
-  console.log("inside calculator");
-
   var x = 0;
 
   do {
 
     var ctr_array = (x, y);
     var y = ++x;
-
+    console.log("ManiCalc Prompt Calculator Session " + x);
 
     var value1 = parseFloat(prompt('Please insert first number for calculation:'));
     var choice = (prompt('Choose your action Add(+), Minus(-) Multiply(*) Divide(/)'));
@@ -38,4 +36,4 @@
     var x = y;
 
 
-  } while (user == 'y');
+  } while (user != 'n');
